@@ -24,7 +24,7 @@ const SpecialBanner = () => {
   return (
     <div className="py-20 px-6 sm:px-12 lg:px-40 relative sm:flex justify-between ">
       {specials.map((special) => (
-        <div className="my-12 mx-2">
+        <div className="my-12 mx-2" key={special.desc}>
           <special.icon
             strokeWidth={1}
             color="#8BA7EE"
