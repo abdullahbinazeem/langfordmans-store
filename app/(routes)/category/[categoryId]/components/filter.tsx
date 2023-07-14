@@ -56,9 +56,9 @@ const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
               )}
               onClick={() => onClick(filter.id)}
             >
-              {filter.name}
+              <p className="text-md">{filter.name}</p>
               <div
-                className="h-4 w-4 rounded-full border border-gray-600"
+                className="h-3 w-3 rounded-full border border-gray-600"
                 style={{ backgroundColor: filter?.value }}
               />
             </Button>
