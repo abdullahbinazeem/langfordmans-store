@@ -44,7 +44,7 @@ const MissionPage = () => {
       <div className="flex lg:flex-nowrap items-center flex-wrap">
         <div className="lg:mr-16 mr-5">
           {skills.map((skill) => (
-            <div className="flex items-center mb-14">
+            <div className="flex items-center mb-14" key={skill.desc}>
               <div className="bg-[#DFE8FF] p-4 rounded-2xl">
                 <skill.icon
                   strokeWidth={0.8}
