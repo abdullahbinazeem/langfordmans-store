@@ -12,6 +12,7 @@ export interface Category {
 
 export interface Product {
   id: string;
+  description: string;
   category: Category;
   name: string;
   price: string;
@@ -31,6 +32,7 @@ export interface Size {
   id: string;
   name: string;
   value: string;
+  order: number;
 }
 
 export interface Color {

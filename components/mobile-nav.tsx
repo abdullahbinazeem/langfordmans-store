@@ -68,7 +68,7 @@ const MainNav: React.FC<MobileNavProps> = ({ data }) => {
                 <h2
                   className={cn("text-2xl pb-2 mb-4 border-b text-neutral-500")}
                 >
-                  Categories
+                  Products
                 </h2>
                 {routes.map((route) => (
                   <Link
