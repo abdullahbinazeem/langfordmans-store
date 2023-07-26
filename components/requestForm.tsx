@@ -2,7 +2,7 @@ import React from "react";
 
 const RequestForm = () => {
   return (
-    <div className="w-[70%] m-auto my-40">
+    <div className="w-full md:w-[70%] m-auto my-40">
       <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
         <h1 className="text-2xl font-bold text-primary mb-6">
           Product Requests
