@@ -33,7 +33,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
 
-    cart.addItem(data);
+    cart.addItem(
+      {
+        ...data,
+        colors: data.colors,
+      },
+      0
+    );
   };
 
   return (
@@ -65,10 +71,24 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       <div>
         <p className="font-semibold text-lg">{data.name}</p>
         <p className="text-sm text-gray-500">{data.category?.name}</p>
+        <div className="flex gap-x-1 mt-2">
+          {data?.colors.map((color) => (
+            <>
+              <div
+                className="h-6 w-6 rounded-full border border-gray-400"
+                style={{ backgroundColor: color.value }}
+              />
+            </>
+          ))}
+        </div>
       </div>
       {/*  Price */}
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
+      </div>
+      <div>
+        <p className="text-sm">Shipping, Canada & US Wide</p>
+        <p className="text-xs">${data.shipping.price}</p>
       </div>
     </div>
   );

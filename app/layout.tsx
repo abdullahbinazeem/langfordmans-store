@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
+import getCategories from "@/actions/get-categories";
 
 const font = Montserrat({ subsets: ["latin"] });
 

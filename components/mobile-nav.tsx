@@ -33,7 +33,7 @@ const MainNav: React.FC<MobileNavProps> = ({ data }) => {
   }));
 
   return (
-    <nav className="items-center space-x-4 lg:space-x-6 block sm:hidden">
+    <nav className="items-center space-x-4 lg:space-x-6 block md:hidden">
       <Menu
         onClick={onOpen}
         className="text-primary cursor-pointer"
@@ -44,7 +44,7 @@ const MainNav: React.FC<MobileNavProps> = ({ data }) => {
         open={open}
         onClose={onClose}
         as="div"
-        className="relative z-40 sm:hidden"
+        className="relative z-40 md:hidden"
       >
         <div className="fixed inset-0 bg-black bg-opacity-60" />
 

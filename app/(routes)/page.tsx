@@ -16,12 +16,14 @@ import MissionPage from "@/components/static-pages/mission-page";
 import SpecialBanner from "@/components/static-pages/special-banner";
 import GalleryPage from "@/components/static-pages/gallery";
 import ContactPage from "@/components/static-pages/contact";
+import getGallery from "@/actions/get-gallery";
 
 export const revalidate = 0;
 
 const Hompage = async () => {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("52ab43fc-cde8-4537-b82c-a9a794170a9c");
+  const gallery = await getGallery();
+  const billboard = await getBillboard("c819e2b2-d979-4ca6-b41f-e8bd90d037aa");
 
   return (
     <div>
@@ -40,7 +42,7 @@ const Hompage = async () => {
         </div>
         <MissionPage />
         <SpecialBanner />
-        <GalleryPage />
+        <GalleryPage gallery={gallery} />
         <ContactPage />
       </Container>
     </div>

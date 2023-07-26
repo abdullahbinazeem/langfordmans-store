@@ -26,18 +26,19 @@ const Summary = () => {
   }, [searchParams, removeAll]);
 
   const totalPrice = items.reduce((total, item) => {
-    return total + Number(item.price);
+    return total + Number(item.data.price);
   }, 0);
 
   const shippingPrice = items.reduce((total, item) => {
-    return total + Number(item.shipping.price);
+    return total + Number(item.data.shipping.price);
   }, 0);
 
   const onCheckout = async () => {
     const response = await axios.post(
       `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
       {
-        productIds: items.map((item) => item.id),
+        productIds: items.map((item) => item.data.id),
+        variantIndexes: items.map((item) => item.colorIndex),
       }
     );
 

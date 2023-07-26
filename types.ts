@@ -17,8 +17,8 @@ export interface Product {
   name: string;
   price: string;
   isFeatured: boolean;
-  size: Size;
-  color: Color;
+  size: String;
+  colors: Color[];
   shipping: Shipping;
   images: Image[];
 }
@@ -45,4 +45,14 @@ export interface Shipping {
   id: string;
   name: string;
   price: string;
+}
+
+export interface Gallery {
+  id: string;
+  images: GalleryImage[];
+}
+
+export interface GalleryImage {
+  id: string;
+  url: string;
 }
