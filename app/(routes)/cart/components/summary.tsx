@@ -48,17 +48,32 @@ const Summary = () => {
   return (
     <div className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
       <h2 className="text-lg font-medium text-gray-900">Order Summary</h2>
-      <div className="mt-6 space-y-4">
+      <div className="mt-6 space-y-2">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium text-gray-900">Order total</div>
+          <div className="text-base font-medium text-gray-900">Items total</div>
           <Currency value={totalPrice} />
         </div>
-        <div className="flex items-center justify-between  border-gray-200 ">
-          <div className="text-base font-medium text-gray-900">
-            Shipping total
-          </div>
-          <Currency value={shippingPrice} />
+        <div className="flex items-center justify-between gap-x-4 pt-4  border-gray-200 ">
+          <div className="text-sm  text-gray-700 underline">Shipping total</div>
+          <p className="text-sm ">
+            <Currency value={shippingPrice} />
+          </p>
         </div>
+        <div className="flex items-center justify-between gap-x-4  border-gray-200 ">
+          <div className="text-sm  text-gray-700 underline">Sales tax</div>
+          <p className="text-sm ">
+            <Currency value={totalPrice * 0.07} />
+          </p>
+        </div>
+        <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div className=" font-bold text-gray-900 text-lg">Total</div>
+          <p className="x ">
+            <Currency value={totalPrice + shippingPrice + totalPrice * 0.07} />
+          </p>
+        </div>
+        <p className="text-xs text-neutral-500 pt-4">
+          Dont wanna pay for shipping? Free local product pickup available
+        </p>
       </div>
       <Button
         disabled={items.length === 0}

@@ -33,7 +33,7 @@ const CartItem: React.FC<CartItemProps> = ({ data: { data, colorIndex } }) => {
 
   return (
     <li className="flex py-6 border-b">
-      <div className="relative h-24 w-24 rounded-md overflow-hidden sm:h-48 sm:w-48">
+      <div className="relative h-36 w-36 rounded-md overflow-hidden sm:h-48 sm:w-48">
         <Image
           fill
           src={data.images[0].url}
@@ -62,7 +62,7 @@ const CartItem: React.FC<CartItemProps> = ({ data: { data, colorIndex } }) => {
             selectedIndex={index}
             onChange={onChange}
           >
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+            <div className="mx-auto mb-4 mt-6 w-full max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="flex gap-x-2">
                 {data?.colors.map((color) => (
                   <Tab
@@ -89,11 +89,13 @@ const CartItem: React.FC<CartItemProps> = ({ data: { data, colorIndex } }) => {
             </div>
           </Tab.Group>
         </div>
-        <div>
+        <div className="block sm:flex items-center gap-x-2">
           <Currency value={data.price} />
 
-          <p className="mt-4">Shipping</p>
-          <p className="text-sm">$ {data.shipping.price}</p>
+          <div className="display mt-2 sm:m-0 flex items-center underline">
+            <p className=" text-xs">Shipping</p>
+            <p className="text-xs">&nbsp; ${data.shipping.price}</p>
+          </div>
         </div>
       </div>
     </li>

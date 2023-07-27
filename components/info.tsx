@@ -57,7 +57,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             selectedIndex={selectedIndex}
             onChange={setSelectedIndex}
           >
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+            <div className="mx-auto mt-6  w-full max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="grid grid-cols-4 gap-2">
                 {data?.colors.map((color) => (
                   <Tab
