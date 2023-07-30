@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import CartItem from "./components/cart-item";
 import Summary from "./components/summary";
 
-export const revalidate = 0;
+export const revalidate = 30;
 
 const CartPage = () => {
   const cart = useCart();
