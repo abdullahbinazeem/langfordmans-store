@@ -60,6 +60,7 @@ function BlurImage({ image }: { image: GalleryImage }) {
 
   return (
     <NextImage
+      quality={50}
       alt=""
       src={image.url}
       width={0}

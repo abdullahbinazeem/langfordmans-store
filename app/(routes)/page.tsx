@@ -30,7 +30,6 @@ const Hompage = async () => {
         fill
         sizes="100vh"
         quality={100}
-        placeholder="blur"
         src={HeroBg}
         alt="hero background"
         style={{

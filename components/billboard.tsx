@@ -9,6 +9,7 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
   return (
     <div className="p-3 sm:p-6 lg:p-8 rounded-xl overflow-hidden relative">
       <NextImage
+        quality={25}
         fill
         src={`${data?.imageUrl}`}
         alt="Image"
