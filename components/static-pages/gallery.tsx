@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import NextImage from "next/image";
 import { Gallery, GalleryImage } from "@/types";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -10,8 +10,6 @@ interface GalleryProps {
 }
 
 const GalleryPage: React.FC<GalleryProps> = ({ gallery }) => {
-  console.log(gallery);
-
   const [maxImage, setMaxImage] = useState(5);
 
   return (
@@ -61,7 +59,7 @@ function BlurImage({ image }: { image: GalleryImage }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <Image
+    <NextImage
       alt=""
       src={image.url}
       width={0}
