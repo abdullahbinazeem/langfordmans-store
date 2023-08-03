@@ -5,7 +5,6 @@ import Container from "@/components/ui/container";
 import Billboard from "@/components/billboard";
 
 import ProductList from "@/components/product-list";
-import Gallery from "@/components/gallery";
 
 import Image from "next/image";
 
@@ -28,9 +27,16 @@ const Hompage = async () => {
   return (
     <div>
       <Image
-        className="absolute top-0 z-[-1] object-cover object-top h-[100vh]"
+        fill
+        sizes="100vh"
+        quality={100}
+        placeholder="blur"
         src={HeroBg}
         alt="hero background"
+        style={{
+          objectFit: "cover",
+        }}
+        className="z-[-50]"
       />
       <Container>
         <HeroPage />

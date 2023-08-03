@@ -1,7 +1,3 @@
-import Image from "next/image";
-
-import HeroBg from "@/public/HeroBg.png";
-
 const HeroPage = () => {
   return (
     <div className="px-6 sm:px-8 lg:px-4 relative h-[95vh] flex items-center">
