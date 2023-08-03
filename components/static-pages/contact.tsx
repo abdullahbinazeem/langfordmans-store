@@ -1,6 +1,3 @@
-import Image from "next/image";
-import work from "@/public/work.png";
-
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 import Link from "next/link";

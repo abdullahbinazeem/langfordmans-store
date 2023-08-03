@@ -9,7 +9,7 @@ import ProductCard from "@/components/ui/product-card";
 import SelectFilter from "./components/select-filter";
 import RequestForm from "@/components/requestForm";
 
-export const revalidate = 30;
+export const revalidate = 0;
 
 interface CategoryPageProps {
   params: {

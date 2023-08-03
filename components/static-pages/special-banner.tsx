@@ -1,6 +1,3 @@
-import Image from "next/image";
-import work from "@/public/work.png";
-
 import { Truck, ShieldCheck, Wrench } from "lucide-react";
 
 import HeroBg from "@/public/HeroBg.png";

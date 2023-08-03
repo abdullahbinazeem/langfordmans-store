@@ -17,7 +17,7 @@ import GalleryPage from "@/components/static-pages/gallery";
 import ContactPage from "@/components/static-pages/contact";
 import getGallery from "@/actions/get-gallery";
 
-export const revalidate = 30;
+export const revalidate = 0;
 
 const Hompage = async () => {
   const products = await getProducts({ isFeatured: true });

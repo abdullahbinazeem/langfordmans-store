@@ -1,4 +1,4 @@
-import Image from "next/image";
+import NextImage from "next/image";
 import work from "@/public/work.png";
 
 import { Ruler, Gauge, Hammer } from "lucide-react";
@@ -64,7 +64,7 @@ const MissionPage = () => {
           ))}
         </div>
         <div>
-          <Image
+          <NextImage
             className="object-cover sm:min-w-[400px] sm:min-h-[400px] m-auto lg:ml-14"
             src={work}
             alt="workshop"
