@@ -65,7 +65,7 @@ const MissionPage = () => {
         </div>
         <div>
           <NextImage
-            quality={40}
+            quality={10}
             className="object-cover sm:min-w-[400px] sm:min-h-[400px] m-auto lg:ml-14"
             src={work}
             alt="workshop"

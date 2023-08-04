@@ -60,13 +60,14 @@ function BlurImage({ image }: { image: GalleryImage }) {
 
   return (
     <NextImage
-      quality={50}
+      quality={25}
       alt=""
       src={image.url}
       width={0}
       height={0}
-      sizes="100vw"
+      sizes="1"
       objectFit="contain"
+      loading="lazy"
       className={cn(
         "duration-700  h-[250px] w-[400px] lg:h-[150px] 2xl:h-[200px] md:w-auto ease-in-out group-hover:opacity-75 object-cover md:object-contain",
         isLoading
