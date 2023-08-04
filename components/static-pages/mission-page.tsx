@@ -1,9 +1,9 @@
 import NextImage from "next/image";
-import work from "@/public/work.png";
+import work from "@/public/work.jpg";
 
 import { Ruler, Gauge, Hammer } from "lucide-react";
 
-import HeroBg from "@/public/HeroBg.png";
+import HeroBg from "@/public/HeroBg.jpg";
 
 const skills = [
   {

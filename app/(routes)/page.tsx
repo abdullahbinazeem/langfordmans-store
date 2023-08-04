@@ -8,7 +8,7 @@ import ProductList from "@/components/product-list";
 
 import Image from "next/image";
 
-import HeroBg from "@/public/HeroBg.png";
+import HeroBg from "@/public/HeroBg.jpg";
 
 import HeroPage from "@/components/static-pages/hero-page";
 import MissionPage from "@/components/static-pages/mission-page";
