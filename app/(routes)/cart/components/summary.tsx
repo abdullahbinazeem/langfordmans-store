@@ -59,10 +59,14 @@ const Summary = () => {
             <Currency value={shippingPrice} />
           </p>
         </div>
+        <div className="flex items-center justify-between gap-x-4  border-gray-200 ">
+          <div className="text-sm  text-gray-700 underline">Sales tax</div>
+          <p className="text-sm ">calculated at checkout</p>
+        </div>
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
           <div className=" font-bold text-gray-900 text-lg">Total</div>
           <p className="x ">
-            <Currency value={totalPrice + shippingPrice + totalPrice * 0.07} />
+            <Currency value={totalPrice + shippingPrice} />
           </p>
         </div>
         <p className="text-xs text-neutral-500 pt-4">
