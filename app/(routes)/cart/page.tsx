@@ -9,7 +9,7 @@ import Summary from "./components/summary";
 
 export const revalidate = 0;
 
-const CartPage = async () => {
+const CartPage = () => {
   const cart = useCart();
 
   const [isMounted, setIsMounted] = useState(false);
