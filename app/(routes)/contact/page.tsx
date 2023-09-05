@@ -1,6 +1,8 @@
 import Container from "@/components/ui/container";
 import React from "react";
 
+export const revalidate = 0;
+
 const Contact = () => {
   return (
     <Container>

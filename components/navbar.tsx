@@ -4,9 +4,9 @@ import Container from "@/components/ui/container";
 import MainNav from "@/components/main-nav";
 import getCategories from "@/actions/get-categories";
 import NavbarActions from "./navbar-actions";
-import { revalidatePath } from "next/cache";
-import { Home } from "lucide-react";
 import MobileNav from "./mobile-nav";
+
+export const revalidate = 0;
 
 const Navbar = async () => {
   const categories = await getCategories();
@@ -33,14 +33,14 @@ const Navbar = async () => {
               <div className="flex justify-between items-center">
                 <div className="lg:mr-20 mr-10 md:flex hidden gap-x-6">
                   <a
-                    href="#contact"
+                    href="/#contact"
                     className="text-sm font-medium transition-colors text-white hover:text-primary"
                   >
                     <p className="">Contact</p>
                   </a>
 
                   <a
-                    href="#gallery"
+                    href="/#gallery"
                     className="text-sm font-medium transition-colors text-white hover:text-primary"
                   >
                     <p className="">Gallery</p>
