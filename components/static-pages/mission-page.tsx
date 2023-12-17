@@ -3,8 +3,6 @@ import work from "@/public/work.jpg";
 
 import { Ruler, Gauge, Hammer } from "lucide-react";
 
-import HeroBg from "@/public/HeroBg.jpg";
-
 const skills = [
   {
     icon: Hammer,

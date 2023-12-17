@@ -4,20 +4,26 @@ const HeroPage = () => {
       <div className="pb-10">
         <div className="sm:mb-20 mb-10">
           <h1 className="text-white sm:text-7xl text-5xl font-bold">
-            Beyond <span className="text-primary ">Simplicity</span>
+            Langford<span className="text-primary ">Man</span>
           </h1>
           <p className="text-white sm:text-2xl text-lg font-medium mt-4">
-            We are a supplier of high quality gear for any situation,
-            <br />
-            built to the highest standards.
+            Sewing & Embroidery
           </p>
         </div>
-        <a
-          className="text-white text-lg sm:text-xl bg-primary py-4 px-12 rounded-xl font-bold"
-          href="#shop"
-        >
-          Shop
-        </a>
+        <div className="flex items-center gap-6">
+          <a
+            className="text-white text-lg sm:text-xl bg-primary py-4 px-12 rounded-xl font-bold"
+            href="#gallery"
+          >
+            Gallery
+          </a>
+          <a
+            className="text-white text-lg sm:text-xl bg-[#5e83a8] py-4 px-12 rounded-xl font-bold"
+            href="#gallery"
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </div>
   );

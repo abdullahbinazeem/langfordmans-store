@@ -29,8 +29,6 @@ const CartItem: React.FC<CartItemProps> = ({ data: { data, colorIndex } }) => {
     cart.changeColor(data.id, index);
   };
 
-  console.log(data);
-
   return (
     <li className="flex py-6 border-b">
       <div className="relative h-36 w-36 rounded-md overflow-hidden sm:h-48 sm:w-48">

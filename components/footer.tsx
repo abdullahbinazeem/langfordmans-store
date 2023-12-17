@@ -85,6 +85,8 @@ const Footer = async () => {
         <div className="mx-auto py-10">
           <p className="text-center text-xs text-white">
             &copy; 2023 LangfordMan, Inc. All rights reserved.
+            <br />
+            <Link href="https://freds-ecom-dashboard.vercel.app/">Admin</Link>
           </p>
         </div>
       </Container>

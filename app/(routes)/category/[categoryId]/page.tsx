@@ -33,6 +33,10 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 
   return (
     <div className="bg-white">
+      <div className="opacity-90 text-2xl fixed w-full h-[200px] top-[50%] bg-gray-100 z-10 grid place-content-center">
+        Shop is being built, products cannot be purchased at this time. Sorry
+        for the inconvenience.
+      </div>
       <Container>
         <Billboard data={category.billboard} />
         <div className="px-4 sm:px-6 lg:px-8 pb-24 pt-10">

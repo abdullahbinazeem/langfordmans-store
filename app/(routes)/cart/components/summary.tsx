@@ -33,17 +33,17 @@ const Summary = () => {
     return total + Number(item.data.shipping.price);
   }, 0);
 
-  const onCheckout = async () => {
-    const response = await axios.post(
-      `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
-      {
-        productIds: items.map((item) => item.data.id),
-        variantIndexes: items.map((item) => item.colorIndex),
-      }
-    );
+  // const onCheckout = async () => {
+  //   const response = await axios.post(
+  //     `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
+  //     {
+  //       productIds: items.map((item) => item.data.id),
+  //       variantIndexes: items.map((item) => item.colorIndex),
+  //     }
+  //   );
 
-    window.location = response.data.url;
-  };
+  //   window.location = response.data.url;
+  // };
 
   return (
     <div className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
@@ -70,12 +70,12 @@ const Summary = () => {
           </p>
         </div>
         <p className="text-xs text-neutral-500 pt-4">
-          Dont wanna pay for shipping? Free local product pickup available
+          Don&apos;t wanna pay for shipping? Free local product pickup available
         </p>
       </div>
       <Button
         disabled={items.length === 0}
-        onClick={onCheckout}
+        // onClick={onCheckout}
         className="w-full mt-6"
       >
         Checkout

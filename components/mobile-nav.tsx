@@ -55,15 +55,54 @@ const MainNav: React.FC<MobileNavProps> = ({ data }) => {
             </div>
 
             <div className="p-4 flex flex-col">
-              <Link
-                href="/"
-                className={cn(
-                  "text-2xl pb-2 mb-10 border-b flex items-center",
-                  pathname === "/" ? "text-primary" : "text-neutral-400"
-                )}
-              >
-                Home <Home className="ml-5" />
-              </Link>
+              <div className="mb-10 ">
+                <Link
+                  href="/"
+                  className={cn(
+                    "text-2xl pb-2 border-b flex items-center",
+                    pathname === "/" ? "text-primary" : "text-neutral-400"
+                  )}
+                >
+                  Home <Home className="ml-5" />
+                </Link>
+                <div>
+                  <a
+                    href="/"
+                    className={cn(
+                      "text-md font-medium transition-colors hover:text-black p-2",
+                      pathname === "/" ? "text-black" : "text-neutral-400"
+                    )}
+                    onClick={onClose}
+                  >
+                    <p className="">
+                      Projects{" "}
+                      <span className="text-neutral-400 text-xs font-light">
+                        (coming soon!)
+                      </span>
+                    </p>
+                  </a>
+                  <a
+                    href="/#gallery"
+                    className={cn(
+                      "text-md font-medium transition-colors hover:text-black p-2",
+                      pathname === "/" ? "text-black" : "text-neutral-400"
+                    )}
+                    onClick={onClose}
+                  >
+                    <p className="">Gallery</p>
+                  </a>
+                  <a
+                    href="/#contact"
+                    className={cn(
+                      "text-md font-medium transition-colors hover:text-black p-2",
+                      pathname === "/" ? "text-black" : "text-neutral-400"
+                    )}
+                    onClick={onClose}
+                  >
+                    <p className="">Contact</p>
+                  </a>
+                </div>
+              </div>
               <div className="flex flex-col">
                 <h2
                   className={cn("text-2xl pb-2 mb-4 border-b text-neutral-500")}

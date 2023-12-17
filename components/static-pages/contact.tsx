@@ -29,24 +29,6 @@ const ContactPage = () => {
               className="cursor-pointer transition ease-in stroke-[#BDBDBD] hover:stroke-[#23A6F0]"
             />
           </a>
-          <a>
-            <Twitter
-              size={30}
-              className="cursor-pointer transition ease-in stroke-[#BDBDBD] hover:stroke-[#23A6F0]"
-            />
-          </a>
-          <a>
-            <Instagram
-              size={30}
-              className="cursor-pointer transition ease-in stroke-[#BDBDBD] hover:stroke-[#23A6F0]"
-            />
-          </a>
-          <a>
-            <Linkedin
-              size={30}
-              className="cursor-pointer transition ease-in stroke-[#BDBDBD] hover:stroke-[#23A6F0]"
-            />
-          </a>
         </div>
       </div>
     </div>

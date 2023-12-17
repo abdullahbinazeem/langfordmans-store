@@ -39,14 +39,14 @@ const Hompage = async () => {
       />
       <Container>
         <HeroPage />
-        <div className="space-y-10 pb-10" id="shop">
+        {/* <div className="space-y-10 pb-10" id="shop">
           <Billboard data={billboard} />
           <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
             <ProductList title="Featured Products" items={products} />
           </div>
-        </div>
+        </div> */}
         <MissionPage />
-        <SpecialBanner />
+        {/* <SpecialBanner /> */}
         <GalleryPage gallery={gallery} />
         <ContactPage />
       </Container>
