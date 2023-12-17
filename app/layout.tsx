@@ -11,8 +11,9 @@ import getCategories from "@/actions/get-categories";
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Store",
-  description: "store",
+  title: "LangfordMan",
+  description:
+    "LangfordMan are a local supplier of Sewing & Embroidery in Victoria BC. We have a collection of our work and library and you can purchase tarps and other embroideries.",
 };
 
 export default function RootLayout({
