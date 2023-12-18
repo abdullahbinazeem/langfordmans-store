@@ -19,7 +19,7 @@ const HeroPage = () => {
           </a>
           <a
             className="text-white text-lg sm:text-xl bg-[#5e83a8] py-4 px-12 rounded-xl font-bold"
-            href="#gallery"
+            href="#contact"
           >
             Contact
           </a>

@@ -45,7 +45,7 @@ const Hompage = async () => {
             <ProductList title="Featured Products" items={products} />
           </div>
         </div> */}
-        <MissionPage />
+        {/* <MissionPage /> */}
         {/* <SpecialBanner /> */}
         <GalleryPage gallery={gallery} />
         <ContactPage />

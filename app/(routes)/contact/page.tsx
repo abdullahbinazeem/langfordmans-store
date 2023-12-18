@@ -28,9 +28,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color">
-                      778 - 525 - 6786
-                    </p>
+                    <p className="text-base text-body-color">250-514-5280</p>
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
@@ -49,7 +47,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                      Langfordman@gmailc.om
+                      Thelangfordman@gmail.com
                     </p>
                   </div>
                 </div>

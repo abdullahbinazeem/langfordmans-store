@@ -35,7 +35,7 @@ const Footer = async () => {
             <p className="text-sm">Victoria’s high quality gear supplier</p>
             <div className="md:hidden block h-[.5px] w-full bg-neutral-700 my-8" />
           </div>
-          <div className="md:col-span-1 pb-8">
+          {/* <div className="md:col-span-1 pb-8">
             <h1 className="text-lg pb-6 font-bold">Products</h1>
             <ul>
               {routes.map((route) => (
@@ -50,7 +50,7 @@ const Footer = async () => {
               ))}
             </ul>
             <div className="md:hidden block h-[.5px] w-full bg-neutral-700 my-8" />
-          </div>
+          </div> */}
           <div className="md:col-span-1 pb-8">
             <h1 className="text-lg pb-6 font-bold">Company</h1>
             <ul>
@@ -72,11 +72,11 @@ const Footer = async () => {
             <div className="flex flex-col gap-y-8">
               <div className="flex items-center gap-x-3">
                 <Mail size={28} stroke-width={1} />
-                <p className="text-sm">Freddy@email.com</p>
+                <p className="text-sm">Thelangfordman@gmail.com</p>
               </div>
               <div className="flex items-center gap-x-3">
                 <Phone size={28} stroke-width={1} />
-                <p className="text-sm">778 - 778 - 1234</p>
+                <p className="text-sm">250-514-5280</p>
               </div>
             </div>
             <div className="md:hidden block h-[.5px] w-full bg-neutral-700 my-8" />
